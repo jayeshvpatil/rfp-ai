@@ -1,0 +1,6 @@
+from mistral:latest
+
+PARAMETER temperature 0.1
+PARAMETER stop Result
+
+SYSTEM """"""

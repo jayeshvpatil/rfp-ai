@@ -36,7 +36,8 @@ class RFPCrew():
         agents=[industry_analysis_agent, solution_architect_agent],
         tasks=[industry_analysis_task, solution_architect_task],
         verbose=True,
-        full_output= True
+        full_output= True,
+        share_crew=False
         )
         output = crew.kickoff()
         st.info(output)

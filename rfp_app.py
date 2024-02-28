@@ -16,4 +16,7 @@ if __name__ == "__main__":
         with st.spinner("Crew is working your RFP Research..Be Right back...."):
             rfp_crew = RFPCrew(company, competitors, business_problem, industry)
             rfp_response =  rfp_crew.run()
-            st.info(rfp_response)
+            file_name = company + '_rfp_response.txt'
+            with open(file_name,'w')as file:
+                file.write(str(rfp_response))
+                st.info(rfp_response)
